@@ -17,8 +17,8 @@ services:
     image: diouxx/glpi
     container_name : glpi
     hostname: glpi
-    #ports:
-     # - "8200:80"
+    ports:
+      - "8200:80"
     volumes:
       - ./glpi/:/var/www/html/glpi
     environment:
